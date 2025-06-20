@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background: url('img/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+
+        }
+        input {
+            padding: 10px;
+            font-size: 18px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-left: 10px;
+        }
+        .error {
+            color: red;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>SG Baden's Playbook</h1>
+    
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="checkPassword()">Submit</button>
+    
+    <div class="error" id="error-message"></div>
+
+    <script>
+        function checkPassword() {
+            var enteredPassword = document.getElementById("password").value;
+            var correctPassword = "fiji"; // Set the correct password here
+            
+            if (enteredPassword === correctPassword) {
+                window.location.href = "frc-guideline-7s.html"; // Redirect to the second page
+            } else {
+                document.getElementById("error-message").innerText = "Incorrect password. Please try again.";
+            }
+        }
+    </script>
+    
+</body>
+</html>
