@@ -1,6 +1,6 @@
 ---
 title: "SG Baden Playbook"
-date: "HELLO! Let Rafa know what needs to be added/improved <3"
+date: "Feel free to send Rafa content to be added/improved <3"
 output:
   html_document:
     theme: flatly
